@@ -36,7 +36,7 @@ export default function TransitionsModal({ children, media_type, id }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [content, setContent] = useState();
-  const [video, setVideo] = useState("");
+  const [video, setVideo] = useState(content.title);
 
   const handleOpen = () => {
     setOpen(true);
